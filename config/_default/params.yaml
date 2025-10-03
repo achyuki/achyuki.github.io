@@ -1,0 +1,63 @@
+description: 静待雪咲时
+mainSections:
+    - posts
+featuredImageField: image
+rssFullContent: true
+favicon: /favicon.ico
+
+dateFormat:
+    published: 2006/01/02
+    lastUpdated: 2006/01/02 15:04
+
+sidebar:
+    compact: false
+    emoji: 🍥
+    subtitle: 静待雪咲时
+    avatar:
+        enabled: true
+        local: false
+        src: /avatar.webp
+
+footer:
+    since: 2025
+    customText: meow~
+
+article:
+    math: true
+    toc: true
+    readingTime: true
+    license:
+        enabled: true
+        default: Licensed under CC BY-NC-SA 4.0
+
+comments:
+    enabled: false
+
+widgets:
+    homepage:
+        - type: search
+        - type: archives
+          params:
+              limit: 5
+        - type: categories
+          params:
+              limit: 10
+        - type: tag-cloud
+          params:
+              limit: 10
+    page:
+        - type: toc
+
+defaultImage:
+    opengraph:
+        enabled: false
+
+colorScheme:
+    toggle: true
+    default: auto
+
+imageProcessing:
+    cover:
+        enabled: true
+    content:
+        enabled: true

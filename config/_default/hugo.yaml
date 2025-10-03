@@ -1,0 +1,73 @@
+baseurl: https://blog.ayuki.site/
+languageCode: zh-cn
+theme: hugo-theme-stack
+title: YukiChan´s blog
+copyright: YukiChan
+
+# Theme i18n support
+# Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
+DefaultContentLanguage: zh-cn
+
+# Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
+# This will make .Summary and .WordCount behave correctly for CJK languages.
+hasCJKLanguage: true
+
+buildFuture: true
+
+pagination:
+    pagerSize: 8
+
+permalinks:
+    post: /p/:slug/
+    page: /:slug/
+
+menu:
+    main: []
+
+    social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/achyuki
+          params:
+              icon: brand-github
+
+related:
+    includeNewer: true
+    threshold: 60
+    toLower: false
+    indices:
+        - name: tags
+          weight: 100
+
+        - name: categories
+          weight: 200
+
+markup:
+    goldmark:
+        extensions:
+            passthrough:
+                enable: true
+                delimiters:
+                    block:
+                        - - \[
+                          - \]
+                        - - $$
+                          - $$
+                    inline:
+                        - - \(
+                          - \)
+        renderer:
+            ## Set to true if you have HTML content inside Markdown
+            unsafe: true
+    tableOfContents:
+        endLevel: 4
+        ordered: true
+        startLevel: 2
+    highlight:
+        noClasses: false
+        codeFences: true
+        guessSyntax: true
+        lineNoStart: 1
+        lineNos: true
+        lineNumbersInTable: true
+        tabWidth: 4
