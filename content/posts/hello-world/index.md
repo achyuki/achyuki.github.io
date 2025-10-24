@@ -1,5 +1,5 @@
 +++
-author = "YukiChan"
+author = "AcetylYuki"
 title = "Hello World!"
 date = "2025-10-03"
 description = "Markdown Syntax Test"
